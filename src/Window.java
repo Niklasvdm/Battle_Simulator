@@ -2,10 +2,15 @@ import javax.swing.*;
 
 public class Window {
 
-    public static class main(String[] args){
-        // creating instance of JFrame with name "first way"
-        frame okay  =new JFrame("first way");
 
+
+
+    public static void main(String[] args){
+
+        try {
+            Jframe frame = new JFrame("first way");
+        }
+        catch (Exception e) {}
         // creates instance of JButton
         JButton button = new JButton("let's see");
 
