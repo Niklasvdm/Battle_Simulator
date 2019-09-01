@@ -13,13 +13,9 @@ import javax.swing.* ;
 
 public class Window extends JFrame {
 
-    public static void main(String[] args) throws HeadlessException{
-        Window(5);
-    }
-
     static GraphicsConfiguration gc;
 
-   public Window(int size) throws HeadlessException {
+   public static void window(int size) throws HeadlessException {
 
        JFrame frame = new JFrame(gc);
        frame.setTitle("Hello World!");
@@ -29,11 +25,17 @@ public class Window extends JFrame {
        frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
        frame.pack();*/
        frame.setVisible(true);
+       /**
        Graphics2D Graph = (Graphics2D) g;
        ImageIcon imago = new ImageIcon("src/Resources/Dot.png");
        image = imago.getImage();
        Graph.drawImage();
+       */
    }
+
+   public static void main(String[] args) throws HeadlessException {
+        window(5);
+    }
 
 
 
