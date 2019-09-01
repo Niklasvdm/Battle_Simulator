@@ -1,20 +1,25 @@
 package BS_Window;
+import java.lang.*;
 import java.awt.* ;
 import javax.swing.* ;
 
 /**
  This class is intended to make a simple window, in set dimensions with a given tilesize
  http://zetcode.com/tutorials/javagamestutorial/movingsprites/ --> for help
+
+ For Jpanel, make an Actionhandler on the JPanel. Then this.add. .. Actionhandler --> make a class that extends an actionhandler with @Override. And in these functions
+ tell the 'repaint' function what to do exactly. Thi repainter is basically the FPS.
 **/
 
-public class Window {
+public class Window extends JFrame {
+
     public static void main(String[] args) throws HeadlessException{
         Window(5);
     }
 
     static GraphicsConfiguration gc;
 
-   public static void Window(int size) throws HeadlessException {
+   public Window(int size) throws HeadlessException {
 
        JFrame frame = new JFrame(gc);
        frame.setTitle("Hello World!");
@@ -24,10 +29,10 @@ public class Window {
        frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
        frame.pack();*/
        frame.setVisible(true);
-/*       Graphics2D Graph = (Graphics2D) g;
+       Graphics2D Graph = (Graphics2D) g;
        ImageIcon imago = new ImageIcon("src/Resources/Dot.png");
        image = imago.getImage();
-       Graph.drawImage();*/
+       Graph.drawImage();
    }
 
 
