@@ -21,16 +21,16 @@ public class Window extends JFrame {
        frame.setTitle("Hello World!");
        frame.setSize(600   ,1000);
        frame.setLocation(600,0);
-/*       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
-       frame.pack();*/
+       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       frame.getContentPane().add(new Label(), BorderLayout.CENTER);
+       frame.pack();
        frame.setVisible(true);
-       /**
-       Graphics2D Graph = (Graphics2D) g;
-       ImageIcon imago = new ImageIcon("src/Resources/Dot.png");
-       image = imago.getImage();
-       Graph.drawImage();
-       */
+
+//       Graphics2D Graph = (Graphics2D) g;
+//       ImageIcon imago = new ImageIcon("src/Resources/Dot.png");
+//       image = imago.getImage();
+//       Graph.drawImage();
+ 
    }
 
    public static void main(String[] args) throws HeadlessException {
